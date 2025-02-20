@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+/* ユーザーのメッセージのスタイル */
+.user {
+    background-color: #28a745;
+    color: #fff;
+    text-align: right;
+    align-self: flex-end;
+    margin-left: auto; /* 追加 */
+    max-width: 80%; /* 追加 */
+    border-top-right-radius: 0; /* 追加 */
+}
+
+/* ボットのメッセージのスタイル */
+.bot {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+    align-self: flex-start;
+    margin-right: auto; /* 追加 */
+    max-width: 80%; /* 追加 */
+    border-top-left-radius: 0; /* 追加 */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #007bff; /* 枠を追加 */
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+    width: 100%; /* 追加：横幅100% */
+    height: 100px; /* 追加：高さ100px */
+    resize: none; /* 追加：リサイズ不可 */
+}
+
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
